@@ -2,6 +2,16 @@ language: C
 
 install: true
 
+group: "stable"
+
+script: echo Travis
+
+stage: build
+
+branches:
+  only:
+    - master
+
 jobs:
   stage: build
   script:
